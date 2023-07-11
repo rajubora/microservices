@@ -18,7 +18,7 @@ public class Hotel {
 
     @Id
     private String Id;
-    
+
     private String name;
     private  String email;
     private  String about;
