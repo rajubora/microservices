@@ -4,6 +4,7 @@ package com.lcwr.user.service.entity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,7 +13,9 @@ import javax.persistence.Table;
 import javax.validation.constraints.Size;
 
 @Entity
+@Table(name = "users")
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
 @Builder
 public class User {
