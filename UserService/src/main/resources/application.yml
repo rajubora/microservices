@@ -16,19 +16,12 @@ spring:
              show_sql: true
              format_sql: true
 
-       application:
-         name: USER-SERVICE
+       config:
+         import: optional:config-server:http://localhost:9091
+
 
 management:
   endpoints:
     web:
       exposure:
         include: health , info , beans , *
-eureka:
-   instance:
-      prefer-ip-address: true
-   client:
-      register-with-eureka: true
-      fetch-registry: true
-      service-url:
-        defaultZone: http://localhost:8080/eureka
